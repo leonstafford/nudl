@@ -16,5 +16,5 @@ Remote controlled machine to assist with opal fossicking.
  - create venv preferring system packages:
    - `python3 -mvenv --system-site-packages venv`
  - `. venv/bin/activate`
- - `pip install --upgrade pip`
- - `pip install -r requirements.txt`
+ - (venv) `pip install --upgrade pip`
+ - (venv) `pip install -r requirements.txt` (slow)
