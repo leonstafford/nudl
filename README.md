@@ -18,3 +18,7 @@ Remote controlled machine to assist with opal fossicking.
  - `. venv/bin/activate`
  - (venv) `pip install --upgrade pip`
  - (venv) `pip install -r requirements.txt` (slow)
+
+### TODO
+
+ - test camera feed via [video4linux support in OpenBSD](https://man.openbsd.org/video.4)
