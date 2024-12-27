@@ -32,6 +32,8 @@ steerer = rosys.driving.Steerer(wheels)
 
 # ui
 rosys.driving.keyboard_control(steerer)
+rosys.driving.joystick(steerer, size=50, color='blue')
+
 with ui.scene():
     rosys.driving.robot_object(shape, odometer)
 ui.label('hold SHIFT to steer with the keyboard arrow keys')
