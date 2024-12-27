@@ -9,15 +9,16 @@ Remote controlled machine to assist with opal fossicking.
  - [RoSys](https://github.com/zauberzeug/rosys)
  - [NiceGUI](https://github.com/zauberzeug/nicegui)
 
-### OpenBSD -current setup
+### Ubuntu LTS robot host setup
 
- - (for FastAPI/guvicorn dependencies, see coobertech-api repo)
- - `pkg_add -Dsnap py3-dotenv py3-virtualenv py3-pip`
- - create venv preferring system packages:
-   - `python3 -mvenv --system-site-packages venv`
+   - `python3 -m venv venv` (if not existant)
  - `. venv/bin/activate`
- - (venv) `pip install --upgrade pip`
  - (venv) `pip install -r requirements.txt` (slow)
+
+### OpenBSD host
+
+ - Firefox, `about:config` `browser.fixup.fallback-to-https` -> `FALSE`, explicitly visit `http://robotIP`
+ - PENDING: Shift + Arrow Keys nav not working within cwm(1) environment
 
 ### TODO
 
